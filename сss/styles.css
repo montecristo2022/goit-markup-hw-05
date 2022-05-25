@@ -146,6 +146,8 @@ margin-left: auto;
 /* site-nav */
 .nav-link,
 .contact-link {
+
+    position: relative;
 color: var(--title-text-color);
 
 font-weight: 500;
@@ -159,6 +161,24 @@ font-weight: 500;
         padding-top: 32px;
         padding-bottom: 32px;
 }
+
+
+
+.nav-link.current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+}
+
+
+
+
+
 
 .contact-link:hover .contact-icon,
 .contact-link:focus .contact-icon {
