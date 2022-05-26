@@ -327,13 +327,14 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border:none;
 transition-property: color, box-shadow, var(--background-color);
 
+
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 2500ms;
-   
+
 
 }
 
@@ -811,14 +812,46 @@ fill: #FFFFFF;
 }
 
 
+.hidden-box {
+    position: relative;
+    overflow: hidden;
+
+}
 
 
 
+.overlay-text {
+
+    color: #ffffff;
+    top: 0;
+
+
+    transform: translateY(100%);
+
+    font-size: 18px;
+    line-height: 1.55;
+    overflow: hidden;
+
+
+}
 
 
 
-
-
+.hidden-box:hover .overlay-text,
+.hidden-box:focus .overlay-text {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translateY(0);
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 1;
+    transition-duration: 2500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 
