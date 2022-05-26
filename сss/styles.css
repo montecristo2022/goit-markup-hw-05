@@ -813,6 +813,7 @@ fill: #FFFFFF;
 
 
 .hidden-box {
+ 
     position: relative;
     overflow: hidden;
 
@@ -821,13 +822,19 @@ fill: #FFFFFF;
 
 
 .overlay-text {
-
+        height: 100%;
+            width: 100%;
+position: absolute;
     color: #ffffff;
     top: 0;
 
 
-    transform: translateY(100%);
-
+    transform: translateY(200%);
+    background-color: rgba(33, 150, 243, 0.9);
+padding-left: 24px;
+padding-right: 24px;
+padding-top: 63px;
+padding-bottom: 63px;
     font-size: 18px;
     line-height: 1.55;
     overflow: hidden;
@@ -839,15 +846,11 @@ fill: #FFFFFF;
 
 .hidden-box:hover .overlay-text,
 .hidden-box:focus .overlay-text {
-    height: 100%;
-    width: 100%;
+
     position: absolute;
     transform: translateY(0);
-    padding-top: 64px;
-    padding-bottom: 64px;
-    padding-left: 24px;
-    padding-right: 24px;
-    background-color: rgba(33, 150, 243, 0.9);
+
+  
     opacity: 1;
     transition-duration: 2500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
