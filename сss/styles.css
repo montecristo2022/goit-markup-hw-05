@@ -454,7 +454,7 @@ font-weight: 500;
             font-weight: 700;
             color: #FFFFFF;
             line-height: 1.14;
-        
+        text-transform: uppercase;
 }
 
 
@@ -718,6 +718,8 @@ transition-property: border;
 }
 
 
+
+
 .footer-title {
     text-transform: uppercase;
     color: #FFFFFF;
@@ -800,8 +802,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.brands:hover,
-.brands:focus {
+.link-brands:hover .brands,
+.link-brands:focus .brands {
 
 fill: #2196F3
         
@@ -811,9 +813,6 @@ fill: #2196F3
 .link-brands:focus {
 
 border: 1px solid #2196f3;
-
-
-
 
 }
 
