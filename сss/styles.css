@@ -856,7 +856,7 @@ position: absolute;
 
 
     transform: translateY(200%);
-    background-color: rgba(33, 150, 243, 0.9);
+   
 padding-left: 24px;
 padding-right: 24px;
 padding-top: 63px;
@@ -872,12 +872,16 @@ padding-bottom: 63px;
 
 
 
-.hidden-box:hover .overlay-text,
-.hidden-box:focus .overlay-text {
 
-    position: absolute;
+
+
+
+.wrap-element:hover .overlay-text,
+.wrap-element:focus .overlay-text {
+
+    background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(0);
-
+opacity: 1;
   
    
 
