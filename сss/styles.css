@@ -786,25 +786,29 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.link-brands:hover .brands,
-.link-brands:focus .brands {
+.brands:hover,
+.brands:focus {
 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 1000ms;
-        fill: #2196F3;
+fill: #2196F3
+        
 }
 
 .link-brands:hover,
 .link-brands:focus {
 
-    fill: #2196F3
+border: 1px solid #2196f3;
+
+
+
+
 }
 
 
 .brands {
     fill: #AFB1B8;
     transition-property: fill;
-
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 1000ms;
    
 }
 
